@@ -1,0 +1,25 @@
+{
+    "name": "darkfriend/dev2fun.frames",
+    "description": "Вебвизор и карты сайта в Яндекс.Метрике",
+    "homepage": "https://github.com/darkfriend/dev2fun.frames",
+    "type": "bitrix-module",
+    "keywords": [
+        "bitrix",
+        "yandex",
+        "yandex metrika",
+        "webvisor",
+        "darkfriend"
+    ],
+    "authors": [
+        {
+            "name": "darkfriend",
+            "email": "hi@darkfriend.ru",
+            "role": "Author"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.0|^2.0"
+    }
+}
