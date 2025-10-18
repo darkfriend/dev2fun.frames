@@ -15,6 +15,6 @@
 
 ## Как будет выглядеть Яндекс.Метрика с активным модулем
 
-(на фотосессии)
+![yandex_metrika_after.jpg](files/yandex_metrika_after.jpg)
 
 

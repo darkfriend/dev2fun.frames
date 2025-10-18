@@ -12,6 +12,14 @@ class Dev2funFramesModule
 {
     const MODULE_ID = 'dev2fun.frames';
 
+    /**
+     * Обработчик события на OnPageStart
+     * @return void
+     * @throws \Bitrix\Main\ArgumentException
+     * @throws \Bitrix\Main\LoaderException
+     * @throws \Bitrix\Main\ObjectPropertyException
+     * @throws \Bitrix\Main\SystemException
+     */
     public static function onPageStartEvent()
     {
         static::init();
@@ -28,7 +36,10 @@ class Dev2funFramesModule
     {
         global $APPLICATION;
 
-        if (strpos($APPLICATION->GetCurPage(), '/bitrix/admin') !== false) {
+        if (
+            defined('BX_SECURITY_SKIP_FRAMECHECK')
+            || strpos($APPLICATION->GetCurPage(), '/bitrix/admin') !== false
+        ) {
             return;
         }
 

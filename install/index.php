@@ -109,12 +109,13 @@ class dev2fun_frames extends CModule
     public function registerEvents()
     {
         EventManager::getInstance()
-            ->registerEventHandler(
+            ->registerEventHandlerCompatible(
                 "main",
                 "OnPageStart",
                 $this->MODULE_ID,
                 "Dev2funFramesModule",
-                "onPageStartEvent"
+                "onPageStartEvent",
+                -1
             );
     }
 
@@ -124,6 +125,12 @@ class dev2fun_frames extends CModule
     public function unRegisterEvents()
     {
         EventManager::getInstance()
-            ->unRegisterEventHandler('main', 'OnPageStart', $this->MODULE_ID);
+            ->unRegisterEventHandler(
+                'main',
+                'OnPageStart',
+                $this->MODULE_ID,
+                "Dev2funFramesModule",
+                "onPageStartEvent"
+            );
     }
 }

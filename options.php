@@ -62,9 +62,10 @@ $tabControl->Begin();
 <link rel="stylesheet" href="https://unpkg.com/blaze@4.0.0-6/scss/dist/objects.containers.min.css">
 <link rel="stylesheet" href="https://unpkg.com/blaze@4.0.0-6/scss/dist/components.tables.min.css">
 
+<!--/bitrix/admin/settings.php?mid=dev2fun.frames&lang=ru&tabControl_active_tab=edit1-->
 <form
     method="post"
-    action="<?= sprintf('%s?mid=%s&lang=%s', $request->getRequestedPage(), urlencode($mid), LANGUAGE_ID) ?>&<?= $tabControl->ActiveTabParam() ?>"
+    action="<?= sprintf('/bitrix/admin/settings.php?mid=%s&lang=%s', urlencode($mid), LANGUAGE_ID) ?>&<?= $tabControl->ActiveTabParam() ?>"
     enctype="multipart/form-data"
     name="editform"
     class="editform"
