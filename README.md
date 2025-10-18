@@ -21,7 +21,7 @@
 
 * Из marketplace Bitrix
 * [Из github](#install_via_github)
-* Через composer
+* [Через composer](#install_via_composer)
 
 ### Установить из github <a name="install_via_github"></a>
 
