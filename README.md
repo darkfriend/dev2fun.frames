@@ -19,7 +19,7 @@
 
 ## Как установить?
 
-* Из marketplace Bitrix
+* [Из marketplace Bitrix](https://marketplace.1c-bitrix.ru/solutions/dev2fun.frames/){:target="_blank"}
 * [Из github](#install_via_github)
 * [Через composer](#install_via_composer)
 
